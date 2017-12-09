@@ -4,8 +4,27 @@ agent any
     stage('Build'){
       steps{
         bat 'echo "Build stage"'
-        bat 'dir'
+      }
+    }
+    stage('Development'){
+      steps{
+        bat 'echo "Development stage"'
+      }
+    }
+    stage('Staging'){
+      steps{
+        bat 'echo "Staging stage"'
+      }
+    }
+    stage('Production'){
+      steps{
+        bat 'echo "Production stage"'
       }
     }
   }
+    post{
+        always{
+                junit 'build/reports/**/*.xml'
+              }
+        }
 }

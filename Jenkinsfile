@@ -7,5 +7,15 @@ agent any
         bat 'dir'
       }
     }
+    stage('Development'){
+      steps{
+        bat 'echo "Development stage"'
+      }
+    }
+    stage('Staging'){
+      steps{
+        bat 'echo "Staging stage"'
+      }
+    }
   }
 }

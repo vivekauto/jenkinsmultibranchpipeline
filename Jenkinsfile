@@ -4,7 +4,6 @@ agent any
     stage('Build'){
       steps{
         bat 'echo "Build stage"'
-        bat 'dir'
       }
     }
   }

@@ -22,4 +22,9 @@ agent any
       }
     }
   }
+  post{
+        always{
+                bat 'echo "Result"'
+              }
+      }
 }

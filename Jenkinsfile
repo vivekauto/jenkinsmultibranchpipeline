@@ -11,5 +11,10 @@ agent any
         bat 'echo "Development stage"'
       }
     }
+    stage('Staging'){
+      steps{
+        bat 'echo "Staging stage"'
+      }
+    }
   }
 }

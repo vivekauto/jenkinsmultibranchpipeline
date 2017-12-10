@@ -16,5 +16,15 @@ agent any
         bat 'echo "Staging stage"'
       }
     }
+    stage('Production'){
+      steps{
+        bat 'echo "Production stage"'
+      }
+    }
   }
+  post{
+        always{
+                bat 'echo "Result"'
+              }
+      }
 }

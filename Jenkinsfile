@@ -25,7 +25,7 @@ agent any
   post{
         always{
                 bat 'echo "Result"'
-                junit 'build/*.xml'
+                junit '*.xml'
               }
       }
 }

@@ -18,7 +18,7 @@ agent any
     }
     stage('Production'){
       steps{
-        bat 'echo "Production stage"'
+        bat 'echo "Productions stage"'
       }
     }
   }
